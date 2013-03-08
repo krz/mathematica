@@ -1,0 +1,120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3323,        110]
+NotebookOptionsPosition[      2863,         90]
+NotebookOutlinePosition[      3201,        105]
+CellTagsIndexPosition[      3158,        102]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], ":=", 
+   RowBox[{"0", "/;", 
+    RowBox[{"x", "<", "0"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], ":=", 
+   RowBox[{"1", "/;", 
+    RowBox[{"x", "\[GreaterEqual]", "0"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.528705148017171*^9, 3.528705186327169*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"g", "[", "x_", "]"}], "=", 
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"n", "=", "0"}], "\[Infinity]"], 
+   RowBox[{"n", "*", 
+    RowBox[{"f", "[", "x_", "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.528705485901495*^9, 3.528705562767981*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Sum", "::", "div"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Sum does not converge. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Sum/div\\\", ButtonNote -> \
+\\\"Sum::div\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.528705577526022*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Rule", "::", "rhs"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Pattern \[NoBreak]\\!\\(x_\\)\[NoBreak] appears on the \
+right-hand side of rule \[NoBreak]\\!\\(\\(\\(g[x_]\\)\\) \[Rule] \\(\\(\\(\
+\[Sum]\\+\\(n = 0\\)\\%\[Infinity]\\) \\(\\(n\\\\ \
+\\(\\(f[x_]\\)\\)\\)\\)\\)\\)\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Rule/rhs\\\", ButtonNote -> \
+\\\"Rule::rhs\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.528705577595838*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Sum", "::", "div"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Sum does not converge. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Sum/div\\\", ButtonNote -> \
+\\\"Sum::div\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.528705577609638*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "0"}], "\[Infinity]"], 
+  RowBox[{"n", " ", 
+   RowBox[{"f", "[", "x_", "]"}]}]}]], "Output",
+ CellChangeTimes->{3.528705577611442*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 599},
+WindowMargins->{{142, Automatic}, {Automatic, 23}},
+FrontEndVersion->"8.0 for Linux x86 (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 379, 11, 50, "Input"],
+Cell[CellGroupData[{
+Cell[961, 35, 291, 8, 58, "Input"],
+Cell[1255, 45, 387, 9, 24, "Message"],
+Cell[1645, 56, 597, 12, 50, "Message"],
+Cell[2245, 70, 387, 9, 24, "Message"],
+Cell[2635, 81, 212, 6, 55, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,384 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     10563,        374]
+NotebookOptionsPosition[      8634,        302]
+NotebookOutlinePosition[      9292,        328]
+CellTagsIndexPosition[      9168,        322]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"?", "I"}]], "Input",
+ CellChangeTimes->{{3.526964200049247*^9, 3.5269642064028807`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"I represents the imaginary unit \
+\\!\\(\\*SqrtBox[RowBox[{\\\"-\\\", \\\"1\\\"}]]\\). \"\>", "MSG"], 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/I"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.526964207953464*^9},
+ CellTags->"Info3526971407-2175577"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"1", "+", "I"}], ")"}], "^", 
+   RowBox[{"(", 
+    RowBox[{"n", "+", "2"}], ")"}]}], "/", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"1", "-", "I"}], ")"}], "^", "n"}]}]], "Input",
+ CellChangeTimes->{{3.526964212038258*^9, 3.526964243533267*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "-", "\[ImaginaryI]"}], ")"}], 
+    RowBox[{"-", "n"}]], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "+", "\[ImaginaryI]"}], ")"}], 
+    RowBox[{"2", "+", "n"}]]}], "//", "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.526964257654632*^9, 3.5269642620507812`*^9}, {
+  3.526964520855435*^9, 3.5269645373155203`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"-", "\[ImaginaryI]"}], ")"}], 
+   RowBox[{"-", "n"}]]}]], "Output",
+ CellChangeTimes->{
+  3.5269642629252996`*^9, {3.526964522454604*^9, 3.526964538178924*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"1", "+", "I"}], ")"}], 
+  RowBox[{"(", 
+   RowBox[{"1", "+", "I"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.526965159939776*^9, 3.5269651675615587`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "\[ImaginaryI]"}]], "Output",
+ CellChangeTimes->{3.5269651692280483`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "PolynomialGCD"}]], "Input",
+ CellChangeTimes->{{3.526965253427846*^9, 3.526965259418713*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"PolynomialGCD\\\", \\\"[\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"poly\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"poly\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"]\\\"}]\\) gives the greatest common divisor of the \
+polynomials \\!\\(\\*SubscriptBox[StyleBox[\\\"poly\\\", \\\"TI\\\"], \
+StyleBox[\\\"i\\\", \\\"TI\\\"]]\\). \
+\\n\\!\\(\\*RowBox[{\\\"PolynomialGCD\\\", \\\"[\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"poly\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"poly\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"], \\\",\\\", RowBox[{\\\"Modulus\\\", \\\"->\\\", \
+StyleBox[\\\"p\\\", \\\"TI\\\"]}]}], \\\"]\\\"}]\\) evaluates the GCD modulo \
+the prime \\!\\(\\*StyleBox[\\\"p\\\", \\\"TI\\\"]\\). \"\>", "MSG"], 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/PolynomialGCD"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.526965261151843*^9},
+ CellTags->"Info3526972460-2175577"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialGCD", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"t", "^", "4"}], "-", 
+    RowBox[{"8", 
+     RowBox[{"t", "^", "3"}]}], "+", 
+    RowBox[{"23", 
+     RowBox[{"t", "^", "2"}]}], "-", 
+    RowBox[{"28", "t"}], "+", "12"}], ",", 
+   RowBox[{
+    RowBox[{"t", "^", "3"}], "-", 
+    RowBox[{"9", 
+     RowBox[{"t", "^", "2"}]}], "+", 
+    RowBox[{"26", "t"}], "-", "24"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.526965278955967*^9, 3.5269653330425377`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"6", "-", 
+  RowBox[{"5", " ", "t"}], "+", 
+  SuperscriptBox["t", "2"]}]], "Output",
+ CellChangeTimes->{3.526965334330286*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialExtendedGCD", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"t", "^", "4"}], "-", 
+    RowBox[{"8", 
+     RowBox[{"t", "^", "3"}]}], "+", 
+    RowBox[{"23", 
+     RowBox[{"t", "^", "2"}]}], "-", 
+    RowBox[{"28", "t"}], "+", "12"}], ",", 
+   RowBox[{
+    RowBox[{"t", "^", "3"}], "-", 
+    RowBox[{"9", 
+     RowBox[{"t", "^", "2"}]}], "+", 
+    RowBox[{"26", "t"}], "-", "24"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5269654286368923`*^9, 3.526965454898732*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"6", "-", 
+    RowBox[{"5", " ", "t"}], "+", 
+    SuperscriptBox["t", "2"]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "6"], ",", 
+     RowBox[{
+      FractionBox["1", "6"], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "-", "t"}], ")"}]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.526965456635013*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQuotient", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"t", "^", "4"}], "-", 
+    RowBox[{"8", 
+     RowBox[{"t", "^", "3"}]}], "+", 
+    RowBox[{"23", 
+     RowBox[{"t", "^", "2"}]}], "-", 
+    RowBox[{"28", "t"}], "+", "12"}], ",", 
+   RowBox[{
+    RowBox[{"t", "^", "3"}], "-", 
+    RowBox[{"9", 
+     RowBox[{"t", "^", "2"}]}], "+", 
+    RowBox[{"26", "t"}], "-", "24"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5269656773593493`*^9, 3.52696570022747*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "t"}]], "Output",
+ CellChangeTimes->{3.526965702369824*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialRemainder", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"t", "^", "4"}], "-", 
+    RowBox[{"8", 
+     RowBox[{"t", "^", "3"}]}], "+", 
+    RowBox[{"23", 
+     RowBox[{"t", "^", "2"}]}], "-", 
+    RowBox[{"28", "t"}], "+", "12"}], ",", 
+   RowBox[{
+    RowBox[{"t", "^", "3"}], "-", 
+    RowBox[{"9", 
+     RowBox[{"t", "^", "2"}]}], "+", 
+    RowBox[{"26", "t"}], "-", "24"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.526965776317933*^9, 3.526965783174788*^9}}],
+
+Cell[BoxData[
+ RowBox[{"36", "-", 
+  RowBox[{"30", " ", "t"}], "+", 
+  RowBox[{"6", " ", 
+   SuperscriptBox["t", "2"]}]}]], "Output",
+ CellChangeTimes->{3.526965784154817*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQuotient", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"t", "^", "3"}], "-", 
+    RowBox[{"9", 
+     RowBox[{"t", "^", "2"}]}], "+", 
+    RowBox[{"26", "t"}], "-", "24"}], ",", 
+   RowBox[{"t", "+", "1"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.526965907938243*^9, 3.526965955587233*^9}}],
+
+Cell[BoxData[
+ RowBox[{"36", "-", 
+  RowBox[{"10", " ", "t"}], "+", 
+  SuperscriptBox["t", "2"]}]], "Output",
+ CellChangeTimes->{3.526965956978038*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PolynomialRemainder", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"t", "^", "3"}], "-", 
+     RowBox[{"9", 
+      RowBox[{"t", "^", "2"}]}], "+", 
+     RowBox[{"26", "t"}], "-", "24"}], ",", 
+    RowBox[{"t", "+", "1"}], ",", "t"}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.5269659436472*^9, 3.52696595078296*^9}, {
+  3.526966108046735*^9, 3.526966115793872*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "60"}]], "Output",
+ CellChangeTimes->{3.526966116569908*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQuotient", "[", 
+  RowBox[{
+   RowBox[{"1", "+", "t"}], ",", 
+   RowBox[{
+    RowBox[{"6", 
+     RowBox[{"t", "^", "2"}]}], "-", 
+    RowBox[{"30", "t"}], "+", "36"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.526966194344401*^9, 3.526966223127952*^9}, {
+  3.526966262350004*^9, 3.526966328276123*^9}}],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.526966329569248*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.5269663067165937`*^9, 3.526966308620007*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.526966594497615*^9, 3.5269665945530043`*^9}}]
+},
+WindowSize->{999, 653},
+WindowMargins->{{68, Automatic}, {22, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"8.0 for Linux x86 (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3526971407-2175577"->{
+  Cell[694, 26, 396, 11, 52, "Print",
+   CellTags->"Info3526971407-2175577"]},
+ "Info3526972460-2175577"->{
+  Cell[2643, 99, 1275, 23, 66, "Print",
+   CellTags->"Info3526972460-2175577"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3526971407-2175577", 8956, 313},
+ {"Info3526972460-2175577", 9064, 316}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 112, 2, 30, "Input"],
+Cell[694, 26, 396, 11, 52, "Print",
+ CellTags->"Info3526971407-2175577"]
+}, Open  ]],
+Cell[1105, 40, 308, 10, 30, "Input"],
+Cell[CellGroupData[{
+Cell[1438, 54, 424, 12, 30, InheritFromParent],
+Cell[1865, 68, 264, 7, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2166, 80, 206, 6, 30, "Input"],
+Cell[2375, 88, 106, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2518, 95, 122, 2, 30, "Input"],
+Cell[2643, 99, 1275, 23, 66, "Print",
+ CellTags->"Info3526972460-2175577"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3955, 127, 488, 15, 30, "Input"],
+Cell[4446, 144, 149, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4632, 153, 506, 15, 30, "Input"],
+Cell[5141, 170, 403, 14, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5581, 189, 502, 15, 30, "Input"],
+Cell[6086, 206, 92, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6215, 213, 502, 15, 30, "Input"],
+Cell[6720, 230, 175, 5, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6932, 240, 331, 9, 30, "Input"],
+Cell[7266, 251, 151, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7454, 260, 424, 12, 50, "Input"],
+Cell[7881, 274, 88, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8006, 281, 345, 9, 30, "Input"],
+Cell[8354, 292, 70, 1, 30, "Output"]
+}, Open  ]],
+Cell[8439, 296, 94, 1, 30, "Input"],
+Cell[8536, 299, 94, 1, 30, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
+
